@@ -1,0 +1,210 @@
+@import "utils";
+
+.nav {
+  &__logo {
+    position: absolute;
+    left: 20px;
+    top: 28px;
+    width: 46px;
+    height: 28px;
+    background-image: url("../images/logo/LogoAir.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__toggle {
+    opacity: 0;
+    position: relative;
+    top: -100%;
+    z-index: -1;
+  }
+
+  &__span,
+  &__span::before,
+  &__span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: #fff;
+
+    transition-duration: 0.3s;
+  }
+
+  &__span::before {
+    content: "";
+    top: -8px;
+  }
+
+  &__span::after {
+    content: "";
+    top: 8px;
+  }
+
+  &__toggle:checked ~ &__btn > &__span {
+    transform: rotate(45deg);
+  }
+
+  &__toggle:checked ~ &__btn > &__span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  &__toggle:checked ~ &__btn > &__span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    visibility: hidden;
+    margin: 0 auto;
+    top: -1000%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 100%;
+
+    padding: 20px 0;
+
+    list-style: none;
+    background-color: #2c2c2c;
+    transition-duration: 0.3s;
+  }
+
+  &__toggle:checked ~ &__list {
+    visibility: visible;
+  }
+
+  &__btn {
+    display: block;
+    position: relative;
+    margin: 20px auto 0;
+
+    width: 40px;
+    height: 30px;
+
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__link {
+    width: 100%;
+    display: block;
+    padding: 8px 0;
+
+    color: #fff;
+    border-radius: 15px;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 150%;
+
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    transition-duration: 0.3s;
+
+    &:hover {
+      position: relative;
+      color: $c-blue;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid $c-blue;
+      }
+    }
+
+    &:active {
+      color: $c-gold;
+
+      &::after {
+        border-bottom-color: $c-gold;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .nav {
+    width: 75%;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
+
+    &__logo {
+      top: 49px;
+      left: 0;
+      z-index: 2;
+    }
+
+    &__toggle {
+      position: absolute;
+    }
+
+    &__list {
+      position: absolute;
+      top: 53px;
+      right: 0;
+      padding: 0;
+      flex-direction: row;
+      justify-content: center;
+      width: calc(100% - 60px);
+      visibility: visible;
+    }
+
+    &__btn {
+      z-index: -1;
+    }
+
+    &__item {
+      width: auto;
+      margin-right: 20px;
+    }
+
+    &__item:last-child {
+      margin: 0 0 0 100px;
+    }
+
+    &__link {
+      display: inline;
+      padding: 8px 0;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-notebook) {
+  .nav {
+    width: 75%;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
+
+    &__list {
+      justify-content: space-around;
+    }
+  }
+}

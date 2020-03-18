@@ -1,7 +1,24 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "nav";
 
 body {
   background: $c-gray;
+}
+
+body,
+header,
+main,
+footer,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h6 {
+  margin: 0;
+  padding: 0;
 }
