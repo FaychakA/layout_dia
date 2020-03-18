@@ -76,6 +76,9 @@ h1 {
               box-shadow: 0 0 10px 5px #3c94f8; }
   .header__slider {
     width: 100%; }
+  .header__not {
+    position: absolute;
+    z-index: -2; }
   .header__photo {
     width: 100%;
     -webkit-box-sizing: content-box;
