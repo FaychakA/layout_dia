@@ -144,7 +144,7 @@
       position: absolute;
       height: auto;
       top: 53px;
-      left: 65%;
+      left: 55%;
       padding: 0;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -183,6 +183,8 @@
             box-sizing: border-box; }
     .nav__list {
       -ms-flex-pack: distribute;
-          justify-content: space-around; } }
+          justify-content: space-around; }
+    .nav__item:last-child {
+      margin: 0 0 0 200px; } }
 
 /*# sourceMappingURL=nav.css.map */
