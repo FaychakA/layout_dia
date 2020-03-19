@@ -1,0 +1,35 @@
+@import "utils";
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__section-1,
+  &__section-2,
+  &__section-3 {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .main-box {
+    &__section-1,
+    &__section-2 {
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-design) {
+  .main-box {
+    &__section-1,
+    &__section-2,
+    &__section-3 {
+      max-width: $screen-design;
+    }
+  }
+}

@@ -3,19 +3,23 @@
 @import "typography";
 @import "header";
 @import "nav";
+@import "main-box";
+@import "section-1";
+@import "section-2";
+@import "section-3";
 
 body {
   background: $c-gray;
-  margin: 0 10px;
-  padding: 0;
 }
 
+body,
 header,
 main,
 footer,
 p,
 ul,
 li,
+img,
 h1,
 h2,
 h3,

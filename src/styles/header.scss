@@ -1,14 +1,11 @@
 @import "utils";
 
 .header {
+  padding: 0 10px;
   background-color: $c-dark-gray;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   color: #fff;
-
-  &__container {
-    max-width: 1366px;
-  }
 
   &__nav {
     position: relative;
@@ -144,6 +141,7 @@
 
 @media screen and (min-width: $screen-tablet) {
   .header {
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,9 +206,6 @@
     align-items: center;
 
     &__section {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
       min-height: 680px;
     }
 
@@ -221,12 +216,12 @@
     }
 
     &__slider {
-      width: 37.5%;
-      margin-left: 12.5%;
+      position: relative;
+      width: 43%;
+      margin-left: 7%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      position: relative;
       height: 680px;
 
       background-image: url("../images/slider/slide-img-2.png");
@@ -270,6 +265,19 @@
       position: absolute;
       bottom: 66px;
       right: 88%;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-design) {
+  .header {
+
+    &__nav {
+      max-width: $screen-design * 0.75;
+    }
+
+    &__section {
+      max-width: $screen-design;
     }
   }
 }
