@@ -12,18 +12,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .main-box__section-1, .main-box__section-2, .main-box__section-3 {
+  .main-box__section-1, .main-box__section-2, .main-box__section-3, .main-box__section-4, .main-box__section-5, .main-box__section-6 {
     width: 100%;
     padding: 0 10px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
 
 @media screen and (min-width: 1024px) {
-  .main-box__section-1, .main-box__section-2 {
+  .main-box__section-1, .main-box__section-2, .main-box__section-3, .main-box__section-4 {
     padding: 0; } }
 
 @media screen and (min-width: 1600px) {
-  .main-box__section-1, .main-box__section-2, .main-box__section-3 {
+  .main-box__section-1, .main-box__section-2, .main-box__section-3, .main-box__section-4, .main-box__section-5, .main-box__section-6 {
     max-width: 1600px; } }
 
 /*# sourceMappingURL=main-box.css.map */
