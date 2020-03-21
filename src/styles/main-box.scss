@@ -8,7 +8,10 @@
 
   &__section-1,
   &__section-2,
-  &__section-3 {
+  &__section-3,
+  &__section-4,
+  &__section-5,
+  &__section-6 {
     width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
@@ -18,7 +21,9 @@
 @media screen and (min-width: $screen-tablet) {
   .main-box {
     &__section-1,
-    &__section-2 {
+    &__section-2,
+    &__section-3,
+    &__section-4 {
       padding: 0;
     }
   }
@@ -28,7 +33,10 @@
   .main-box {
     &__section-1,
     &__section-2,
-    &__section-3 {
+    &__section-3,
+    &__section-4,
+    &__section-5,
+    &__section-6 {
       max-width: $screen-design;
     }
   }

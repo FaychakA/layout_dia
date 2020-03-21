@@ -1,0 +1,107 @@
+@import "utils";
+
+.section-6 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    margin-bottom: 24px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 150%;
+    text-align: center;
+    color: $c-gray-h2-h3;
+  }
+
+  &__p {
+    max-width: 754px;
+    margin-bottom: 64px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: $c-gray-p;
+  }
+
+  &__link {
+    padding: 15px 90px 18px 91px;
+    margin-bottom: 20px;
+    border: 1px solid $c-blue;
+    background-color: $c-blue;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: color 1s, background-color 1s;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+      color: $c-blue;
+      background-color: #fff;
+    }
+
+    &:focus {
+      box-shadow: $focus-shadow;
+    }
+  }
+}
+
+@media screen and (min-width: 1356px) {
+  .section-6 {
+    position: relative;
+    justify-content: center;
+    height: 691px;
+    font-size: 10px;
+    line-height: 20px;
+    background-image: url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg"),
+      url("../images/bacground-sec-6.svg");
+    background-repeat: no-repeat;
+    background-position: left 446px top 77px,
+      left 233px top 72px,
+      left 82px top 370px,
+      left 131px top 518px,
+      left 242px top 283px,
+      left 481px top 465px,
+      right 111px top 109px,
+      right 215px top 130px,
+      right 67px top 276px,
+      right 314px top 385px,
+      right 143px top 413px,
+      right 552px top 514px;
+    background-size: 3em,
+      5em,
+      4em,
+      6em,
+      10em,
+      3em,
+      4em,
+      10em,
+      6em,
+      6em,
+      10em,
+      3em;
+  }
+}
