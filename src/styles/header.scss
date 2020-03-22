@@ -1,14 +1,20 @@
 @import "utils";
 
 .header {
-  padding: 0 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 68px 10px 0;
   background-color: $c-dark-gray;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   color: #fff;
+  box-sizing: border-box;
 
   &__nav {
     position: relative;
+    width: 100%;
   }
 
   &__section {
