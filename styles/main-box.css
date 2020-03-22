@@ -19,7 +19,7 @@
             box-sizing: border-box; }
 
 @media screen and (min-width: 1024px) {
-  .main-box__section-1, .main-box__section-2, .main-box__section-3, .main-box__section-4 {
+  .main-box__section-1, .main-box__section-2, .main-box__section-3, .main-box__section-4, .main-box__section-6 {
     padding: 0; } }
 
 @media screen and (min-width: 1600px) {
