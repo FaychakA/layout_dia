@@ -1,7 +1,38 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "nav";
+@import "main-box";
+@import "section-1";
+@import "section-2";
+@import "section-3";
+@import "section-4";
+@import "section-5";
+@import "section-6";
+@import "footer";
+@import "nav-footer";
 
 body {
   background: $c-gray;
+  width: 100%;
+}
+
+body,
+header,
+main,
+footer,
+p,
+ul,
+li,
+img,
+h1,
+h2,
+h3,
+h6,
+label,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
 }

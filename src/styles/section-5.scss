@@ -1,0 +1,194 @@
+@import "utils";
+
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__article {
+    margin: 20px 0;
+  }
+
+  &__p1 {
+    margin-bottom: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $c-shadow;
+  }
+
+  &__heading {
+    max-width: 362px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    color: $c-gray-h2-h3;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card {
+    max-width: 314px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    height: 494px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+    border-radius: 16px;
+  }
+
+  &__photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 309px;
+  }
+
+  &__svg {
+    position: relative;
+    width: 139px;
+    height: 56px;
+    background: $c-sec-3-card;
+    border-radius: 12px;
+    transform-origin: top;
+    transform: rotate(-60deg);
+    transition: transform 1s, position 1s;
+
+    &--1 {
+      top: 65px;
+      right: 70px;
+    }
+
+    &--2 {
+      bottom: 45px;
+      left: 25px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+
+    &--1 {
+      background-image: url("../images/testimonials/testimonial-ava-1.jpg");
+    }
+
+    &--2 {
+      background-image: url("../images/testimonials/testimonial-ava-2.jpg");
+    }
+
+    &--3 {
+      background-image: url("../images/testimonials/testimonial-ava-3.jpg");
+    }
+  }
+
+  &__quotes {
+    width: 21px;
+    height: 19px;
+    background-image: url("../images/testimonials/q.svg");
+    background-size: contain;
+  }
+
+  &__text1 {
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    color: $c-gray-p;
+  }
+
+  &__text2 {
+    margin-top: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    color: $c-gray-h2-h3;
+  }
+
+  &__text3 {
+    margin: 4px 0 32px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    color: $c-shadow;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  .section-5 {
+    width: 75%;
+    padding: 0 12.5%;
+    &__cards {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      margin: 20px 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .section-5 {
+
+    &__cards {
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1356px) {
+  .section-5 {
+
+    &__article {
+      width: 100%;
+      margin: 148px 0 85px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__cards {
+      justify-content: space-between;
+      margin-bottom: 168px;
+    }
+
+    &__card {
+      margin: 0;
+    }
+  }
+}
