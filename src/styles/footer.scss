@@ -179,10 +179,15 @@
     text-decoration: none;
     text-align: center;
     transition: color 0.5s;
+    outline: none;
   }
 
   &__link:hover {
     color: $c-blue;
+  }
+
+  &__link:focus {
+    color: gold;
   }
 
   &__links {
@@ -193,6 +198,11 @@
     width: 32px;
     height: 32px;
     margin-right: 32px;
+    outline: none;
+
+    &:focus {
+      background-color: gold;
+    }
 
     &--fb {
       background-image: url("../images/social/facebook-1.svg");

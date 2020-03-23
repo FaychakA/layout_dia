@@ -109,12 +109,17 @@
     line-height: 22px;
     text-decoration: none;
     color: $c-sec-3-link;
+    outline: none;
   }
 
   &__link:hover {
     & img {
       transform: scale(1.2);
     }
+  }
+
+  &__link:focus {
+    color: gold;
   }
 
   &__img {

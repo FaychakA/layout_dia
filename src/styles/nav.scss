@@ -132,6 +132,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     border-color: $c-dark-gray;
+    border-bottom: 2px solid $c-dark-gray;
     outline: none;
 
     transition: color 0.5s, border-bottom-color 1s ;

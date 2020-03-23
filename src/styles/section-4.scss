@@ -57,6 +57,7 @@
     line-height: 150%;
     text-decoration: none;
     color: #fff;
+    outline: none;
   }
 
   &__link:hover {
@@ -64,6 +65,10 @@
       transform: scale(1.2);
       box-shadow: $focus-shadow;
     }
+  }
+
+  &__link:focus {
+    color: gold;
   }
 
   &__img {
