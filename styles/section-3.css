@@ -134,10 +134,13 @@
     font-size: 15px;
     line-height: 22px;
     text-decoration: none;
-    color: #334563; }
+    color: #334563;
+    outline: none; }
   .section-3__link:hover img {
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
+  .section-3__link:focus {
+    color: gold; }
   .section-3__img {
     margin-right: 16px;
     -webkit-transition: -webkit-transform 1s;

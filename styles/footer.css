@@ -214,9 +214,12 @@
     text-decoration: none;
     text-align: center;
     -webkit-transition: color 0.5s;
-    transition: color 0.5s; }
+    transition: color 0.5s;
+    outline: none; }
   .footer__link:hover {
     color: #2060f6; }
+  .footer__link:focus {
+    color: gold; }
   .footer__links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -224,7 +227,10 @@
   .footer__soc {
     width: 32px;
     height: 32px;
-    margin-right: 32px; }
+    margin-right: 32px;
+    outline: none; }
+    .footer__soc:focus {
+      background-color: gold; }
     .footer__soc--fb {
       background-image: url("../images/social/facebook-1.svg");
       -webkit-transition: background-image 1s;

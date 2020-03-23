@@ -70,12 +70,15 @@
     font-size: 15px;
     line-height: 150%;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    outline: none; }
   .section-4__link:hover img {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
     -webkit-box-shadow: 0 0 10px 5px #3c94f8;
             box-shadow: 0 0 10px 5px #3c94f8; }
+  .section-4__link:focus {
+    color: gold; }
   .section-4__img {
     margin: 0 16px 0 10px;
     border-radius: 32px;
